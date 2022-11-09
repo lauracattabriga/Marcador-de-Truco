@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fun"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="454dp"
+        android:layout_height="873dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- Team A -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="195dp"
+                android:layout_height="662dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_weight="1">
+
+                <TextView
+                    android:id="@+id/time_a"
+                    android:layout_width="176dp"
+                    android:layout_height="57dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="#56121010"
+                    android:fontFamily="@font/archivo_black"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="NÓS"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/player1_pts"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/player1_pts"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#56121010"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="78sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseOneInPlayerOneButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.538"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/time_a" />
+
+                <Button
+                    android:id="@+id/increaseOneInPlayerOneButton"
+                    android:layout_width="142dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseOneInPlayerOne"
+                    android:text="+2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseThreeInPlayerOneButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/player1_pts" />
+
+                <Button
+                    android:id="@+id/increaseTwelveInPlayerOneButton"
+                    android:layout_width="142dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseTwelveInPlayerOne"
+                    android:text="+12"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/increaseNineInPlayerOneButton" />
+
+                <Button
+                    android:id="@+id/increaseNineInPlayerOneButton"
+                    android:layout_width="142dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseNineInPlayerOne"
+                    android:text="+10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseTwelveInPlayerOneButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/increaseSixInPlayerOneButton" />
+
+                <Button
+                    android:id="@+id/increaseSixInPlayerOneButton"
+                    android:layout_width="142dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseSixInPlayerOne"
+                    android:text="+8"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseNineInPlayerOneButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.478"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/increaseThreeInPlayerOneButton" />
+
+                <Button
+                    android:id="@+id/increaseThreeInPlayerOneButton"
+                    android:layout_width="142dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseThreeInPlayerOne"
+                    android:text="+4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseSixInPlayerOneButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.478"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/increaseOneInPlayerOneButton" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:layout_editor_absoluteY="16dp">
+
+            </View>
+
+            <!-- Team B -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="197dp"
+                android:layout_height="662dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/time_b"
+                    android:layout_width="169dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="#56121010"
+                    android:fontFamily="@font/archivo_black"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="ELES"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/player2_pts"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/player2_pts"
+                    android:layout_width="163dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#56121010"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="78sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseOneInPlayerTwoButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/time_b" />
+
+                <Button
+                    android:id="@+id/increaseOneInPlayerTwoButton"
+                    android:layout_width="142dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseOneInPlayerTwo"
+                    android:text="+2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseThreeInPlayerTwoButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/player2_pts" />
+
+                <Button
+                    android:id="@+id/increaseTwelveInPlayerTwoButton"
+                    android:layout_width="142dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseTwelveInPlayerTwo"
+                    android:text="+12"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.333"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/increaseNineInPlayerTwoButton" />
+
+                <Button
+                    android:id="@+id/increaseNineInPlayerTwoButton"
+                    android:layout_width="142dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseNineInPlayerTwo"
+                    android:text="+10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseTwelveInPlayerTwoButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/increaseSixInPlayerTwoButton" />
+
+                <Button
+                    android:id="@+id/increaseSixInPlayerTwoButton"
+                    android:layout_width="142dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseSixInPlayerTwo"
+                    android:text="+8"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseNineInPlayerTwoButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/increaseThreeInPlayerTwoButton" />
+
+                <Button
+                    android:id="@+id/increaseThreeInPlayerTwoButton"
+                    android:layout_width="142dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/bowlby_one_sc"
+                    android:onClick="increaseThreeInPlayerTwo"
+                    android:text="+4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/increaseSixInPlayerTwoButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/increaseOneInPlayerTwoButton" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="406dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginBottom="55dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view">
+
+                <Button
+                    android:layout_width="363dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="#45750707"
+                    android:fontFamily="@font/archivo_black"
+                    android:onClick="resetScore"
+                    android:text="Reiniciar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
