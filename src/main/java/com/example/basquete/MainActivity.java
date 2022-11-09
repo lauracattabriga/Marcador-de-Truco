@@ -31,15 +31,15 @@ public class MainActivity extends AppCompatActivity {
         TextView pontuacao_jogador = null;
 
         if (playerNumber == TIME_A){
-            pontuacao_jogador = (TextView) findViewById(R.id.player1_pts);
+            pontuacao_jogador = (TextView) findViewById(R.id.jogador1_pts);
         } else {
-            pontuacao_jogador = (TextView) findViewById(R.id.player2_pts);
+            pontuacao_jogador = (TextView) findViewById(R.id.jogador2_pts);
         }
 
-        int score = Integer.parseInt((String) pontuacao_jogador.getText());
-        score += point;
+        int pontuacao = Integer.parseInt((String) pontuacao_jogador.getText());
+        pontuacao += point;
 
-        pontuacao_jogador.setText(String.valueOf(score));
+        pontuacao_jogador.setText(String.valueOf(pontuacao));
 
         Log.d("BUTTON", playerNumber + " | " + point);
     }
@@ -84,9 +84,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetScore(View view) {
-        TextView playerOneScore = (TextView) findViewById(R.id.player1_pts);
+        TextView playerOneScore = (TextView) findViewById(R.id.jogador1_pts);
         playerOneScore.setText("" + PONTOS_PARA_ZERO);
-        TextView playerTwoScore = (TextView) findViewById(R.id.player2_pts);
+        TextView playerTwoScore = (TextView) findViewById(R.id.jogador2_pts);
         playerTwoScore.setText("" + PONTOS_PARA_ZERO);
     }
 
